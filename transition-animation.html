@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            transition and animation
+        </title>
+        <style>
+            .box1{
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                transition: width 2s, height 2s;
+                transition-timing-function: linear;
+            }
+
+            .box1:hover{
+                width: 500px;
+                height: 300px;
+            }
+
+            .box2{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: colorchange;
+                animation-duration: 10s;
+                animation-direction: reverse;
+                animation-iteration-count: 3;
+                position: relative;
+            }
+
+            @keyframes colorchange{
+                0%{background-color: red;left: 0px;top: 0px;}
+                20%{background-color: yellow; left: 1000px; top: 0px;}
+                30%{background-color: rgb(4, 84, 81); left: 0px; top: 500px;}
+                40%{background-color: green; left: 1000px; top: 500px;}
+                50%{background-color: rgb(152, 26, 140); left: 0px; top: 0px;}
+                60%{background-color: grey; left: 0px; top: 500px;}
+                80%{background-color: rgb(33, 28, 28); left: 1000px; top: 0px;}
+                100%{background-color: blue; left: 0px; top: 0px;}
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="box1">  </div><br><br>
+        
+        
+        <div class="box2"></div>
+    
+    </body>
+</html>
