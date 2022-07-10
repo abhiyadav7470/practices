@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Loops & Conditions
+        </title>
+    </head>
+    <body>
+        <div id="people"><ul>
+       <script>
+           for(i=0;i<10;i++){
+             console.log(i);
+           }
+
+           var i=0;
+           while(i<10){
+            console.log(i);
+            i++
+           }
+
+           var arr=['abhi','ranu','tanu','druv'];
+           for(i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        
+
+            var obj=[
+            {
+                    name:'abhi',
+                    age:21
+            },
+            {
+                    name:'tanu',
+                    age:20
+            },
+            {
+                    name:'arju',
+                    age:18
+            }
+        ]
+
+        for(i=0;i<obj.length;i++){
+            document.getElementById('people').innerHTML += '<li>'+obj[i].name+' - '+obj[i].age+'</li>';
+        }
+        
+
+        var a=40;
+        var b=40;
+
+        if(a<b){
+            console.log(a+' is less than '+b);
+        } else if(a==b){
+            console.log(a+' is equal to '+b);
+        } 
+        else{
+            console.log(a+' is more than  '+b);
+        }
+
+        var name='chandu';
+
+        switch(name){
+            case 'jeff':
+                console.log('my name is jeff');
+                break;
+            case 'abhi':
+                 console.log('my name is abhi'); 
+                 break;
+            default:
+                console.log('my name is '+name);
+                break;        
+        }
+       </script>
+       </ul>
+       </div>
+    </body>
+</html>
